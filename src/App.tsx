@@ -4,6 +4,7 @@ import Landing from "./Components/Home/Landing";
 import AboutSection from "./Components/Home/AboutSection";
 import Skills from "./Components/Home/Skills";
 import HomeProjects from "./Components/Home/HomeProjects";
+import Footer from "./Layout/Footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,7 +20,9 @@ function App() {
         <HomeProjects/>
         <Skills />
       </main>
-      <footer></footer>
+      <footer className={`${themeClass} bg-blck dark:bg-whte py-10`}>
+        <Footer/>
+      </footer>
     </>
   );
 }

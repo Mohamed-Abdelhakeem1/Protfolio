@@ -14,7 +14,7 @@
   --color-whte: #48cae4;
   --color-gray: #90e0ef;
   --color-gray2: #999;
-  --color-blue: #1447e6  ;
+  --color-blue: #1447e6;
 }
 
 .container {
@@ -56,6 +56,10 @@ body {
 }
 
 .link {
+  @apply block p-2 hover:text-blue;
+}
+
+.footerLink {
   @apply block p-2 hover:text-blue;
 }
 
