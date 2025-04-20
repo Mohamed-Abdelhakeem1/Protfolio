@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --breakpoint-xs: 500px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+  --color-main: #111191;
+  --color-blck: #000814;
+  --color-blckbg: #000f24;
+  --color-whte: #48cae4;
+  --color-gray: #90e0ef;
+  --color-gray2: #999;
+  --color-blue: #1447e6  ;
+}
+
+.container {
+  @apply mx-auto w-[97%] xs:max-w-[95%] sm:max-w-[92%] md:max-w-[88%] lg:max-w-[83%] xl:max-w-[77%] 2xl:max-w-[70%];
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.fontMon {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fontserif {
+  font-family: "Playfair Display", serif;
+}
+.fontRoma {
+  font-family: "Michroma", sans-serif;
+}
+
+.btn {
+  @apply py-1 px-4 rounded cursor-pointer hover:text-gray2;
+}
+
+.btnCircle {
+  @apply p-3 rounded-full cursor-pointer hover:text-gray2;
+}
+
+.flexCenter {
+  @apply flex items-center justify-center;
+}
+
+.flexBetween {
+  @apply flex items-center justify-between;
+}
+
+.smoothy {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.link {
+  @apply block p-2 hover:text-blue;
+}
+
+.normalBg {
+  @apply bg-gray dark:bg-blckbg;
+}
+
+.normalText {
+  @apply text-blck dark:text-whte;
+}
+
+.bodyBg {
+  @apply bg-whte dark:bg-blck;
+}
+
+.heading {
+  @apply text-center text-2xl  mb-3;
+}
