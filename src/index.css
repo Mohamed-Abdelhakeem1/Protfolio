@@ -10,7 +10,7 @@
   --breakpoint-2xl: 1400px;
   --color-main: #111191;
   --color-blck: #000814;
-  --color-blckbg: #000f24;
+  --color-blckbg: #190f24;
   --color-whte: #48cae4;
   --color-gray: #90e0ef;
   --color-gray2: #999;
@@ -36,11 +36,11 @@ body {
 }
 
 .btn {
-  @apply py-1 px-4 rounded cursor-pointer hover:text-gray2;
+  @apply py-1 px-4 rounded cursor-pointer border-2 border-blck hover:bg-gray block dark:border-whte dark:text-white dark:hover:bg-blckbg ;
 }
 
 .btnCircle {
-  @apply p-3 rounded-full cursor-pointer hover:text-gray2;
+  @apply p-3 rounded-full cursor-pointer hover:text-gray2 block;
 }
 
 .flexCenter {
@@ -76,5 +76,5 @@ body {
 }
 
 .heading {
-  @apply text-center text-2xl  mb-3;
+  @apply text-center text-3xl  mb-6;
 }

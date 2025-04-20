@@ -1,7 +1,7 @@
 const Landing = () => {
   return (
     <section>
-      <div className="container flexBetween flex-col pt-20 md:pt-8 md:flex-row gap-12 md:gap-4 min-h-[95vh] text-blck dark:text-whte  pb-8 md:py-10">
+      <div className="container flexBetween flex-col pt-20 md:pt-8 md:flex-row gap-12 md:gap-4 min-h-[95vh] normalText  pb-8 md:py-10">
         <div className="flex justify-center gap-4  flex-col">
           <p className="fontserif">Hi my name is:</p>
           <h2 className="fontRoma font-bold uppercase text-2xl xs:text-3xl md:text-4xl lg:text-5xl">
@@ -24,7 +24,9 @@ const Landing = () => {
             is my calling.
           </p>
         </div>
-        <div className="w-60 md:w-70"><img src="/Developer.png" alt="" /></div>
+        <div className="w-60 md:w-70">
+          <img src="/Developer.png" alt="" />
+        </div>
       </div>
     </section>
   );

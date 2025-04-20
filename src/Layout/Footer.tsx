@@ -1,6 +1,7 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import SocialDiv from "../Common/SocialDiv";
 import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 export interface SocialType {
   icon: ReactNode;
@@ -25,9 +26,9 @@ const Footer = () => {
 
   return (
     <section className="container dark:text-blck text-whte text-center">
-      <a href="/" className="text-3xl font-bold fontRoma block">
+      <Link to="/" className="text-3xl font-bold fontRoma block">
         M.A.<span className="text-sm text-blue">dev</span>
-      </a>
+      </Link>
       <div className="flexCenter gap-5 flex-wrap my-5">
         {Socials.length > 0 &&
           Socials.map((social, idx) => <SocialDiv key={idx} social={social} />)}

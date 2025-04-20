@@ -1,27 +1,28 @@
 import { useState } from "react";
 import Header from "./Layout/Header";
-import Landing from "./Components/Home/Landing";
-import AboutSection from "./Components/Home/AboutSection";
-import Skills from "./Components/Home/Skills";
-import HomeProjects from "./Components/Home/HomeProjects";
 import Footer from "./Layout/Footer";
+import HomePage from "./Routes/HomePage";
+import { Route, Routes } from "react-router-dom";
+import ProjectsPage from "./Routes/ProjectsPage";
+import AboutPage from "./Routes/AboutPage";
+import ContactPage from "./Routes/ContactPage";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const themeClass = `${darkMode ? "dark" : ""}`;
+  const themeClass: string = `${darkMode ? "dark" : ""}`;
   return (
     <>
       <header className={`${themeClass} bodyBg`}>
         <Header mode={darkMode} setTheme={setDarkMode} />
       </header>
-      <main className={`${themeClass} bodyBg min-h-[200vh]`}>
-        <Landing />
-        <AboutSection />
-        <HomeProjects/>
-        <Skills />
-      </main>
+      <Routes>
+        <Route path="/" element={<HomePage themeClass={themeClass} />} />
+        <Route path="/projects" element={<ProjectsPage themeClass={themeClass}/>} />
+        <Route path="/about" element={<AboutPage themeClass={themeClass}/>} />
+        <Route path="/contact" element={<ContactPage themeClass={themeClass}/>} />
+      </Routes>
       <footer className={`${themeClass} bg-blck dark:bg-whte py-10`}>
-        <Footer/>
+        <Footer />
       </footer>
     </>
   );
