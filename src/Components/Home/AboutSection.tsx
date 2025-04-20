@@ -14,7 +14,7 @@ const AboutSection = () => {
           GitHub for version control and team collaboration. Eager to contribute
           to real-world projects, grow within a development team.
         </p>
-        <Link to="/projects" className="btn smoothy mx-auto mt-6 text-lg w-fit">More About me</Link>
+        <Link to="/about" className="btn smoothy mx-auto mt-6 text-lg w-fit">More About me</Link>
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ const HomeProjects = () => {
       <div className="container text-blck dark:text-whte">
         <h3 className="heading text-blue fontRoma">Projects</h3>
         <div className="h-50"></div>
-        <Link to="/about" className="btn smoothy mx-auto mt-6 text-lg w-fit">
+        <Link to="/projects" className="btn smoothy mx-auto mt-6 text-lg w-fit">
           Explore More Projects
         </Link>
       </div>

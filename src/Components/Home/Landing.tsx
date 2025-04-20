@@ -23,6 +23,13 @@ const Landing = () => {
             </span>{" "}
             is my calling.
           </p>
+          <a
+            href="https://drive.google.com/file/d/1IusQ0NMm1QO7BCmb5ui5JAP2IBC-CJJn/view?usp=sharing"
+            target="_blank"
+            className="btn smoothy mt-3 text-lg w-fit"
+          >
+            Download Resume
+          </a>
         </div>
         <div className="w-60 md:w-70">
           <img src="/Developer.png" alt="" />
