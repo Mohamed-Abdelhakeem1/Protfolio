@@ -1,17 +1,27 @@
+import { useEffect, useState } from "react";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
-interface themeProps {
-  mode: boolean;
-  setTheme: (theme: boolean) => void;
-}
+const ThemeButton = () => {
+  const [darkMode, setDarkMode] = useState(false);
 
-const ThemeButton = ({ mode, setTheme }: themeProps) => {
+  const handleThemeChange = () => {
+    setDarkMode(!darkMode);
+    localStorage.setItem("dark-mode", JSON.stringify(!darkMode));
+    document.documentElement.classList.toggle("dark", !darkMode);
+  };
+  useEffect(() => {
+    if (localStorage.getItem("dark-mode")) {
+      setDarkMode(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
   return (
     <button
-      onClick={() => setTheme(!mode)}
+      onClick={() => handleThemeChange()}
       className="btnCircle normalBg smoothy shadow-xl/20"
     >
-      {mode ? <MdOutlineLightMode /> : <MdOutlineDarkMode />}
+      {darkMode ? <MdOutlineLightMode /> : <MdOutlineDarkMode />}
     </button>
   );
 };

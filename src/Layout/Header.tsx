@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom";
 import ThemeButton from "../Components/Header/ThemeButton";
 
-interface headerProps {
-  mode: boolean;
-  setTheme: (theme: boolean) => void;
-}
 
-const Header = ({ mode, setTheme }: headerProps) => {
+const Header = () => {
   return (
-    <nav className="normalText dark:bg-blck py-4 fixed w-full top-0 z-50 backdrop-blur-2xl">
+    <nav className="normalText dark:bg-blck py-4 fixed w-full top-0 z-50 backdrop-blur-2xl bodyBg">
       <div className="container flexBetween flex-col sm:flex-row gap-2 xs:gap-0">
         <Link to="/" className="text-3xl font-bold fontRoma">
           M.A.<span className="text-sm text-blue">dev</span>
@@ -35,7 +31,7 @@ const Header = ({ mode, setTheme }: headerProps) => {
             </Link>
           </li>
         </ul>
-        <ThemeButton mode={mode} setTheme={setTheme} />
+        <ThemeButton />
       </div>
     </nav>
   );

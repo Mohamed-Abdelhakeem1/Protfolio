@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import ExploreBtn from "../../Common/ExploreBtn";
 
 const HomeProjects = () => {
   return (
@@ -6,9 +6,7 @@ const HomeProjects = () => {
       <div className="container text-blck dark:text-whte">
         <h3 className="heading text-blue fontRoma">Projects</h3>
         <div className="h-50"></div>
-        <Link to="/projects" className="btn smoothy mx-auto mt-6 text-lg w-fit">
-          Explore More Projects
-        </Link>
+        <ExploreBtn route="/projects" text="Explore More Projects" />
       </div>
     </section>
   );

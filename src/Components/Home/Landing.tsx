@@ -28,7 +28,7 @@ const Landing = () => {
             target="_blank"
             className="btn smoothy mt-3 text-lg w-fit"
           >
-            Download Resume
+            Resume
           </a>
         </div>
         <div className="w-60 md:w-70">

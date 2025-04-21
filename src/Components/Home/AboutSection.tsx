@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import ExploreBtn from "../../Common/ExploreBtn";
 
 const AboutSection = () => {
   return (
@@ -14,7 +14,7 @@ const AboutSection = () => {
           GitHub for version control and team collaboration. Eager to contribute
           to real-world projects, grow within a development team.
         </p>
-        <Link to="/about" className="btn smoothy mx-auto mt-6 text-lg w-fit">More About me</Link>
+        <ExploreBtn route="/about" text="More About me" />
       </div>
     </section>
   );

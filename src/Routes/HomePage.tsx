@@ -2,12 +2,11 @@ import AboutSection from "../Components/Home/AboutSection";
 import HomeProjects from "../Components/Home/HomeProjects";
 import Landing from "../Components/Home/Landing";
 import Skills from "../Components/Home/Skills";
-import { ThemeProps } from "../Types/ThemeType";
 
 
-const HomePage = ({ themeClass }: ThemeProps) => {
+const HomePage = () => {
   return (
-    <main className={`${themeClass} bodyBg`}>
+    <main className={`bodyBg`}>
       <Landing />
       <AboutSection />
       <HomeProjects />

@@ -1,8 +1,8 @@
-import { ThemeProps } from "../Types/ThemeType";
 
-const ProjectsPage = ({ themeClass }: ThemeProps) => {
+
+const ProjectsPage = () => {
   return (
-    <main className={`${themeClass} bodyBg pt-20`}>
+    <main className={`bodyBg pt-20`}>
       <section className="container h-[100vh] text-5xl normalText">
         Here are my all projects
       </section>
