@@ -10,7 +10,7 @@ const ThemeButton = () => {
     document.documentElement.classList.toggle("dark", !darkMode);
   };
   useEffect(() => {
-    if (localStorage.getItem("dark-mode")) {
+    if (localStorage.getItem("dark-mode") === "true") {
       setDarkMode(true);
       document.documentElement.classList.add("dark");
     }

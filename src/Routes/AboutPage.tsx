@@ -30,7 +30,10 @@ const AboutPage = () => {
                 <p>(+20) 106 8393 558</p>
               </div>
             </div>
-            <div className="w-fit">
+            <p className="mt-8 -mb-3 text-blue text-xs md:text-sm font-semibold text-center md:text-left">
+              If Not Now, When? Let’s Work Together!
+            </p>
+            <div className="md:w-fit">
               <ExploreBtn route="/contact" text="Contact Me" />
             </div>
           </div>
@@ -64,8 +67,8 @@ const AboutPage = () => {
           </p>
         </div>
         <Skills />
-        <div className="pb-10">
-          <ExploreBtn route="/projects" text="Explore My Projects" />
+        <div className="pb-10 -mt-5">
+          <ExploreBtn route="/projects" text="Explore Projects" />
         </div>
       </section>
     </main>

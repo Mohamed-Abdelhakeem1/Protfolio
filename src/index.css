@@ -82,3 +82,29 @@ body {
 .navItem {
   @apply w-full sm:w-fit text-center;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-white;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-900;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  @apply px-3 py-2;
+}
