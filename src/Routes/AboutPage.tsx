@@ -35,9 +35,9 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="Summary py-10">
+        <div className="Summary py-10 ">
           <h2 className="fontRoma text-3xl text-center text-blue ">Summary</h2>
-          <p className="text-lg fontMon mt-5">
+          <p className="text-md sm:text-lg fontMon mt-5">
             I'm a motivated and fast-learning Junior Frontend Developer with
             hands-on experience in building interactive and responsive user
             interfaces using React. Skilled in using Redux for efficient state
@@ -51,7 +51,7 @@ const AboutPage = () => {
           <h2 className="fontRoma text-3xl text-center text-blue ">
             Education
           </h2>
-          <p className="text-lg fontMon mt-5">
+          <p className="text-md sm:text-lg fontMon mt-5">
             A mechanical engineer who graduated from Mansoura University in 2025
             with a grade of "Good". Gained strong knowledge in core areas such
             as thermodynamics, fluid mechanics, and machine design. Integrated
