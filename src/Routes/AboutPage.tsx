@@ -9,7 +9,8 @@ const AboutPage = () => {
           <div className="w-70 h-90 md:w-90 md:h-90">
             <img
               className="w-full h-full object-cover"
-              src="/Profile.JPG"
+              src="Profile.JPG"
+              alt="Mohamed Image"
             ></img>
           </div>
           <div className="text-left flex-1">

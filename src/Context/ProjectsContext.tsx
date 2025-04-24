@@ -1,4 +1,10 @@
-import { createContext, useCallback, useEffect, useMemo, useState } from "react";
+import {
+  createContext,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import { ProjectType } from "../Types/ProjectType";
 
 interface ProjectsContextProps {
@@ -11,7 +17,7 @@ const ProjectsContext = ({ children }: ProjectsContextProps) => {
   const [projects, setProjects] = useState<ProjectType[]>([]);
   const getProjects = useCallback(async () => {
     try {
-      const res = await fetch("/Projects/Projects.json");
+      const res = await fetch("Projects/Projects.json");
       const data = await res.json();
       setProjects(data.reverse());
     } catch (error) {
@@ -23,7 +29,6 @@ const ProjectsContext = ({ children }: ProjectsContextProps) => {
   }, [getProjects]);
 
   const memoizedProjects = useMemo(() => projects, [projects]);
-
 
   return (
     <ProjectsDataContext.Provider value={memoizedProjects}>
