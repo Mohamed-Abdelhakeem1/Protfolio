@@ -8,7 +8,7 @@ import ProjectsContext from "./Context/ProjectsContext.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ProjectsContext>
-      <Router basename="/Protfolio">
+      <Router basename="/Protfolio/">
         <App />
       </Router>
     </ProjectsContext>

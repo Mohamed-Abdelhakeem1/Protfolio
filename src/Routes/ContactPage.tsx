@@ -1,14 +1,36 @@
 import { useForm, ValidationError } from "@formspree/react";
-import { useRef } from "react";
-import Lottie from "lottie-react";
-import Sending from "../assets/Animations/sending.json";
+import { useRef, useState } from "react";
+
+export interface formInputsType {
+  name: string;
+  email: string;
+  msg: string;
+}
 
 const ContactPage = () => {
   const [state, handleSubmit] = useForm("xanowbnr");
   const formRef = useRef<HTMLFormElement>(null);
-  if (state.succeeded) {
-    formRef.current?.reset();
-  }
+  const [formInputs, setFormInputs] = useState<formInputsType>({
+    name: "",
+    email: "",
+    msg: "",
+  });
+
+  const handleSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    handleSubmit(e);
+    if (state.succeeded) {
+      formRef.current?.reset();
+      setFormInputs({ name: "", email: "", msg: "" });
+    }
+    console.log("Submitted");
+    console.log(formInputs);
+  };
+
+  const availability =
+    formInputs.name.length > 0 &&
+    formInputs.email.length > 0 &&
+    formInputs.msg.length > 0;
 
   return (
     <main className="bodyBg pt-20 pb-10">
@@ -16,7 +38,7 @@ const ContactPage = () => {
         <h2 className="heading text-blue fontRoma">Be in touch</h2>
         <form
           ref={formRef}
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmitForm}
           className="container flex flex-col gap-6"
         >
           <div className="mx-auto w-full max-w-[700px]">
@@ -26,6 +48,9 @@ const ContactPage = () => {
               type="text"
               id="name"
               className="normalBg w-full mt-2"
+              onChange={(e) =>
+                setFormInputs({ ...formInputs, name: e.target.value })
+              }
             />
           </div>
           <div className="mx-auto w-full  max-w-[700px]">
@@ -36,6 +61,9 @@ const ContactPage = () => {
               name="email"
               autoComplete="off"
               className="normalBg w-full mt-2"
+              onChange={(e) =>
+                setFormInputs({ ...formInputs, email: e.target.value })
+              }
             />
             <ValidationError
               prefix="Email"
@@ -49,6 +77,9 @@ const ContactPage = () => {
               id="area"
               name="message"
               className="normalBg w-full mt-2 h-50 resize-none"
+              onChange={(e) =>
+                setFormInputs({ ...formInputs, msg: e.target.value })
+              }
             />
             <ValidationError
               prefix="Message"
@@ -57,12 +88,13 @@ const ContactPage = () => {
             />
           </div>
           {state.submitting ? (
-            <Lottie className="h-10" animationData={Sending} />
+            <p className="mx-auto text-3xl font-bold">........</p>
           ) : (
             <input
               type="submit"
               value="Send"
               className="btn smoothy mx-auto text-lg w-fit"
+              disabled={state.submitting || !availability}
             />
           )}
         </form>

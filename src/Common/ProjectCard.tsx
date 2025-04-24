@@ -6,31 +6,29 @@ const ProjectCard = (project: ProjectType) => {
   return (
     <div
       key={project.id}
-      className="bg-card normalBg rounded-md border overflow-hidden transition-all hover:shadow-md animate-fade-in"
+      className="normalBg rounded-md border overflow-hidden projectCard"
     >
-      <div className="aspect-video bg-muted/50">
+      <div className="aspect-video">
         <img
           src={project.image}
           alt={`Screenshot of ${project.title}`}
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="p-6">
-        <h2 className="text-xl font-bold mb-2">{project.title}</h2>
-        <p className="text-muted-foreground mb-4 text-sm">
-          {project.description}
-        </p>
-        <div className="mb-6 flex flex-wrap gap-2">
+      <div className="p-4">
+          <h2 className="text-xl font-bold mb-2 text-blue">{project.title}</h2>
+          <p className="mb-3">{project.description}</p>
+        <div className="mb-6 flex flex-wrap gap-2 h-fit">
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded"
+              className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded bg-gray-200 dark:bg-gray-800"
             >
               {tech}
             </span>
           ))}
         </div>
-        <div className="flex space-x-3">
+        <div className="flex">
           <button className="mx-auto btn smoothy  hover:opacity-[0.7]">
             <a
               href={project.repoLink}

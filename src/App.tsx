@@ -7,10 +7,7 @@ import ProjectsPage from "./Routes/ProjectsPage";
 import AboutPage from "./Routes/AboutPage";
 import ContactPage from "./Routes/ContactPage";
 
-
 function App() {
-
-
   return (
     <>
       <Header />
