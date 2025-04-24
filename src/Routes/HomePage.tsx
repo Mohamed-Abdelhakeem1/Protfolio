@@ -9,7 +9,7 @@ const HomePage = () => {
     <main className="bodyBg">
       <Landing />
       <AboutSection />
-      <WhatIDo/>
+      <WhatIDo />
       <Skills />
       <HomeProjects />
     </main>
