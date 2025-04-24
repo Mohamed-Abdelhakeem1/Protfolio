@@ -32,7 +32,7 @@ const Landing = () => {
           </a>
         </div>
         <div className="w-60 md:w-70">
-          <img src="/Developer.png" alt="" />
+          <img src="Developer.png" alt="Daveloper image" />
         </div>
       </div>
     </section>
