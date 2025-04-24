@@ -1,5 +1,7 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { useRef } from "react";
+import Lottie from "lottie-react";
+import Sending from "../assets/Animations/sending.json";
 
 const ContactPage = () => {
   const [state, handleSubmit] = useForm("xanowbnr");
@@ -9,7 +11,7 @@ const ContactPage = () => {
   }
 
   return (
-    <main className={`bodyBg pt-20 pb-10`}>
+    <main className="bodyBg pt-20 pb-10">
       <section className="container normalText">
         <h2 className="heading text-blue fontRoma">Be in touch</h2>
         <form
@@ -19,7 +21,12 @@ const ContactPage = () => {
         >
           <div className="mx-auto w-full max-w-[700px]">
             <label htmlFor="name">Name:</label>
-            <input type="text" id="name" className="normalBg w-full mt-2" />
+            <input
+              autoComplete="off"
+              type="text"
+              id="name"
+              className="normalBg w-full mt-2"
+            />
           </div>
           <div className="mx-auto w-full  max-w-[700px]">
             <label htmlFor="email">Email:</label>
@@ -27,6 +34,7 @@ const ContactPage = () => {
               type="email"
               id="email"
               name="email"
+              autoComplete="off"
               className="normalBg w-full mt-2"
             />
             <ValidationError
@@ -48,16 +56,14 @@ const ContactPage = () => {
               errors={state.errors}
             />
           </div>
-          <input
-            type="submit"
-            value={state.submitting ? "..." : state.succeeded ? "Send" : "Send"}
-            className="btn smoothy mx-auto text-lg w-fit"
-            disabled={state.submitting}
-          />
-          {state.succeeded && (
-            <p className="text-center text-blue -mt-3 font-semibold">
-              Thanks for your message! I will get back to you soon.
-            </p>
+          {state.submitting ? (
+            <Lottie className="h-10" animationData={Sending} />
+          ) : (
+            <input
+              type="submit"
+              value="Send"
+              className="btn smoothy mx-auto text-lg w-fit"
+            />
           )}
         </form>
       </section>

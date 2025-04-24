@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "title": "ToDO List",
+    "description": "A simple and intuitive to-do list app designed to help users organize tasks, set priorities, and stay productive.",
+    "image": "Projects/ToDo List.PNG",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "demoLink": "https://mohamed-abdelhakeem1.github.io/To-Do-List/",
+    "repoLink": "https://github.com/Mohamed-Abdelhakeem1/To-Do-List"
+  },
+  {
+    "id": 2,
+    "title": "Food Recipe Finder",
+    "description": "A recipe search application allowing users to find recipes based on ingredients they have with filtering options.",
+    "image": "Projects/Food.PNG",
+    "technologies": ["HTML", "Bootstrap", "JavaScript", "Recipes API"],
+    "demoLink": "https://mohamed-abdelhakeem1.github.io/Food_Recipes/",
+    "repoLink": "https://github.com/Mohamed-Abdelhakeem1/Food_Recipes"
+  },
+  {
+    "id": 3,
+    "title": "Bondi",
+    "description": "This project is a professional and fully responsive Landing Page. Designed to adapt seamlessly across all screen sizes.",
+    "image": "Projects/Bondi.PNG",
+    "technologies": ["HTML", "Bootstrap"],
+    "demoLink": "https://mohamed-abdelhakeem1.github.io/Bondi-Bootstarap/",
+    "repoLink": "https://github.com/Mohamed-Abdelhakeem1/Bondi-Bootstarap"
+  },
+
+  {
+    "id": 4,
+    "title": "Travello",
+    "description": "A visually engaging travel website designed to inspire and assist users in planning trips with ease. Features include destination guides, booking tools, and personalized travel recommendations.",
+    "image": "Projects/Travello.PNG",
+    "technologies": ["HTML", "Css", "JavaScript"],
+    "demoLink": "https://mohamed-abdelhakeem1.github.io/Travello/",
+    "repoLink": "https://github.com/Mohamed-Abdelhakeem1/Travello"
+  },
+
+  {
+    "id": 5,
+    "title": "Static Website",
+    "description": "This project is a visually stunning Landing Page. Enhanced with smooth and eyecatching JavaScript animations, the page delivers an interactive and engaging user experience.",
+    "image": "Projects/Static website.PNG",
+    "technologies": ["HTML", "Sass", "JavaScript"],
+    "demoLink": "https://mohamed-abdelhakeem1.github.io/Static-Website/",
+    "repoLink": "https://github.com/Mohamed-Abdelhakeem1/Static-Website"
+  },
+  {
+    "id": 6,
+    "title": "Creative Agency",
+    "description": "A fully responsive website. Featured a clean, mobilefirst design with interactive elements like color theme and smooth animations.",
+    "image": "Projects/Creative Agency.PNG",
+    "technologies": ["HTML", "Css", "JavaScript"],
+    "demoLink": "https://mohamed-abdelhakeem1.github.io/Creative-Agency/",
+    "repoLink": "https://github.com/Mohamed-Abdelhakeem1/Creative-Agency"
+  },
+  {
+    "id": 7,
+    "title": "Fylo Landing Page",
+    "description": "This project is a sleek and modern Landing Page. Designed with a mobile-first, fully responsive layout. The page showcases clean UI components and subtle animations.",
+    "image": "Projects/Fylo.PNG",
+    "technologies": ["React", "Tailwind CSS"],
+    "demoLink": "https://mohamed-abdelhakeem1.github.io/Fylo/",
+    "repoLink": "https://github.com/Mohamed-Abdelhakeem1/Fylo"
+  },
+  {
+    "id": 8,
+    "title": "E-commerce Platform",
+    "description": "A modern, user-friendly furniture e-commerce website offering stylish home. It includes features like shopping cart and a wishlist for a seamless shopping experience.",
+    "image": "Projects/eCommerce Website.PNG",
+    "technologies": ["React", "TypeScript", "Redux", "Tailwind CSS"],
+    "demoLink": "https://mohamed-abdelhakeem1.github.io/furnitures-eCommerce/",
+    "repoLink": "https://github.com/Mohamed-Abdelhakeem1/furnitures-eCommerce"
+  }
+]

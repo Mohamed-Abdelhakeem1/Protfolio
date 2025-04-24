@@ -3,7 +3,7 @@ import Skills from "../Components/Home/Skills";
 
 const AboutPage = () => {
   return (
-    <main className={`bodyBg pt-20`}>
+    <main className="bodyBg pt-20 pb-10">
       <section className="container normalText">
         <div className="flexBetween flex-col md:flex-row gap-8 py-10">
           <div className="w-70 h-90 md:w-90 md:h-90">
@@ -67,7 +67,7 @@ const AboutPage = () => {
           </p>
         </div>
         <Skills />
-        <div className="pb-10 -mt-5">
+        <div className="-mt-5">
           <ExploreBtn route="/projects" text="Explore Projects" />
         </div>
       </section>

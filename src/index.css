@@ -76,11 +76,15 @@ body {
 }
 
 .heading {
-  @apply text-center text-3xl  mb-6;
+  @apply text-center text-3xl  mb-6 font-semibold;
 }
 
 .navItem {
   @apply w-full sm:w-fit text-center;
+}
+
+a.active {
+  @apply text-blue font-semibold;
 }
 
 ::-webkit-scrollbar {

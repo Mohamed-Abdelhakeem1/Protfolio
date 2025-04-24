@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ThemeButton from "../Components/Header/ThemeButton";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
@@ -9,7 +9,6 @@ const Header = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
   const openClass: string = menuOpen ? "flexBetween" : "hidden sm:flex";
   return (
     <nav className="normalText dark:bg-blck py-4 fixed w-full top-0 z-50 backdrop-blur-2xl bodyBg">
@@ -22,24 +21,24 @@ const Header = () => {
           className={`absolute top-13 xs:left-1/8 w-full xs:w-3/4 sm:w-fit ${openClass} flex-col sm:flex-row sm:static py-3 sm:py-0 gap-6 sm:gap-5 md:gap-8 xl:gap-12 px-4 md:px-8 rounded-lg  sm:rounded-2xl normalBg fontMon shadow-xl/10 `}
         >
           <li className="navItem">
-            <Link to="/" className="link smoothy ">
+            <NavLink to="/" className="link smoothy">
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="navItem">
-            <Link to="/about" className="link smoothy">
+            <NavLink to="/about" className="link smoothy">
               About
-            </Link>
+            </NavLink>
           </li>
           <li className="navItem">
-            <Link to="/projects" className="link smoothy">
+            <NavLink to="/projects" className="link smoothy">
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li className="navItem">
-            <Link to="/contact" className="link smoothy">
+            <NavLink to="/contact" className="link smoothy">
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <div className="flexCenter gap-2">
