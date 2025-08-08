@@ -18,14 +18,12 @@ const AboutPage = () => {
             <div className="flex gap-4 text-xs xs:text-sm sm:text-md md:text-lg lg:text-xl mt-5">
               <div className="flex flex-col gap-3  whitespace-nowrap">
                 <p>Name:</p>
-                <p>Birth Date:</p>
                 <p>Address:</p>
                 <p>Email:</p>
                 <p>Phone:</p>
               </div>
               <div className="flex flex-col gap-3  text-blue font-semibold">
                 <p>Mohamed Abdelhakeem</p>
-                <p>July 19, 1998</p>
                 <p>Mansoura, Egypt</p>
                 <p>mohamedabdlehakeem197@gmail.com</p>
                 <p>(+20) 106 8393 558</p>
